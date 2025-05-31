@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="70dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input Angka 1 -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="Kalkulator Sederhana: Desinta"
+        android:textColor="#020202"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/angka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai Pertama (A)"
+        android:inputType="numberDecimal" />
+
+    <!-- Input Angka 2 -->
+
+    <!-- Tombol Tambah -->
+    <EditText
+        android:id="@+id/angka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai Kedua (B)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/tombolTambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        app:cornerRadius="30sp" />
+
+    <!-- Tombol Kali -->
+    <Button
+        android:id="@+id/tombolKali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kali"
+        app:cornerRadius="30sp" />
+
+    <!-- Tombol Bagi -->
+    <Button
+        android:id="@+id/tombolBagi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bagi"
+        app:cornerRadius="30sp" />
+
+    <!-- Hasil -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingTop="16dp"
+        android:text="Hasil"
+        android:textColor="#070707"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#070707"
+        android:textSize="34sp" />
+
+</LinearLayout>
