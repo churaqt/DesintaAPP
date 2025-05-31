@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="70dp"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="24dp"
+    tools:context=".MainActivity">
 
-    <!-- Input Angka 1 -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewJudul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="15dp"
-        android:text="Kalkulator Sederhana: Desinta"
-        android:textColor="#020202"
-        android:textSize="27sp" />
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="24dp"
+        android:text="Kalkulator Sederhana - Desinta"
+        android:textAlignment="center"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/angka1"
@@ -25,55 +27,51 @@
         android:hint="Nilai Pertama (A)"
         android:inputType="numberDecimal" />
 
-    <!-- Input Angka 2 -->
-
-    <!-- Tombol Tambah -->
     <EditText
         android:id="@+id/angka2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nilai Kedua (B)"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/tombolTambah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tambah"
-        app:cornerRadius="30sp" />
+        app:cornerRadius="20dp"
+        android:layout_marginBottom="8dp"/>
 
-    <!-- Tombol Kali -->
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/tombolKali"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kali"
-        app:cornerRadius="30sp" />
+        app:cornerRadius="20dp"
+        android:layout_marginBottom="8dp"/>
 
-    <!-- Tombol Bagi -->
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/tombolBagi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Bagi"
-        app:cornerRadius="30sp" />
+        app:cornerRadius="20dp"
+        android:layout_marginBottom="8dp"/>
 
-    <!-- Hasil -->
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/labelHasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:paddingTop="16dp"
-        android:text="Hasil"
-        android:textColor="#070707"
-        android:textSize="20sp" />
+        android:text="Hasil:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/hasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#070707"
-        android:textSize="34sp" />
+        android:textSize="34sp"
+        android:textColor="?android:textColorPrimary" />
 
 </LinearLayout>
